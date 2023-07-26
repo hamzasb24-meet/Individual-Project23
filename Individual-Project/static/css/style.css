@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.bird {
+  cursor: pointer;
+}
+
+#birdInfo {
+  display: none;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+#birdInfo h2 {
+  margin-top: 0;
+}
+
+#searchBox {
+  margin: 10px;
+  padding: 5px;
+}

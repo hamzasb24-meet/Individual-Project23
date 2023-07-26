@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birds Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head> 
 <body>
-    
+  <header>
+    <h1>Birds Gallery</h1>
+    <input type="text" id="searchBox" placeholder="Search birds...">
+  </header>
+      {{user["email"]}}
+  <div class="gallery">
+    <div class="bird" onclick="showBirdInfo('bird1')">
+      <img src="bird1.jpg" alt="Bird 1">
+    </div>
+    <div class="bird" onclick="showBirdInfo('bird2')">
+      <img src="bird2.jpg" alt="Bird 2">
+    </div>
+    <!-- Add more birds as needed -->
+  </div>
+
+  <div id="birdInfo">
+    <h2 id="birdName"></h2>
+    <p id="birdDescription"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
